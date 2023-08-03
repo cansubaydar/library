@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/book-open-text-bold.svg" id="favicon" type="image/svg"> 
+  <!-- "https://phosphoricons.com/" -->
+</head>
+<body>
+  <header>
+    <h1>Library</h1>
+    <div class="add-book">
+      <img src="assets/plus-bold.svg" alt="plus">
+      <p>Add New Book</p>
+    </div>
+  </header>
+  <main>
+    <div class="form-container">
+      <form class="form">
+        <h2>New Book</h2>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" placeholder="Book title" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" placeholder="Book author" autocomplete="off" required>  
+        </div>
+        <div class="form-group">
+          <label for="pages">Pages</label>
+          <input type="number" name="pages" id="pages" placeholder="Number of pages" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <p>Status</p>
+          <div class="status-button">
+            <input type="radio" name="status" id="read" value="read" checked>
+            <label for="read">Read</label> 
+
+            <input type="radio" name="status" id="unread" value="unread">
+            <label for="unread">Unread</label>
+          </div>
+        </div> 
+        <div class="form-group buttons">
+          <button class="submit-button" type="submit">Submit</button>
+          <button class="cancel-button" type="button">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div class="book-container"></div>  
+  </main>
+  <footer>
+      &#169; 2023 <a href="https://github.com/cansubaydar" target="_blank">cansubaydar<img src="assets/github-logo-bold.svg" alt="github"></a> 
+  </footer>  
+  <script src="app.js"></script>
+</body>
+</html>
